@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">  
+        <div class="valentines">
+          <div class="envelope"></div>
+          <div class="front"></div>
+          <div class="card">
+          <div class="text">¡Feliz</br> San</br> Valentín!</div>
+          <div class="relative custom-box" id="heartBox" style="z-index: 1;">
+            <label class="jp">JP</label>
+            <div  class="heart">
+            </div>
+          </div>
+
+          <div class="hearts">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+          </div>
+        </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content relative">
+            <span class="close absolute">&times;</span>
+            <label class="text-center w-full block bold">Hola Bonita</label>
+            <p>Se acerca el 14 de febrero y tenía una pregunta importante… ¿Aceptarías el honor de ser mi Valentín? 😍💕<br><br>
+              Prometo buena compañía y quizás hasta un pequeño detalle especial. ¿Qué me dices? 🍷 <br><br></p>
+              <div class="flex items-center justify-center gap-4">
+                <button type="button" class="yes_button button bold" onclick="onYes();">¡Sí! Acepto</button>
+                <button type="button" class="yes_button button bold" onclick="onYes();">¡Porsupuesto!</button>
+              </div>
+        </div>
+    </div>
+   
+    <script type="module" src="scripts/app.js"></script> 
+
+    <!-- <script src="scripts/app.js"></script> -->
+
+</body>
+</html>
